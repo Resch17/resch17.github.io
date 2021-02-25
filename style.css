@@ -305,3 +305,58 @@ a:focus {
 .contact a:hover {
   color: var(--accent-color);
 }
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: unset;
+    background-color: var(--dark-color);
+    height: 100%;
+    padding-bottom: 10px;
+    width: 100vw;
+  }
+
+  .nav__title {
+    color: var(--light-color);
+  }
+
+  .nav__link:hover {
+    cursor: pointer;
+    color: var(--light-color);
+  }
+
+  .skills__container div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    margin-top: 30px;
+  }
+
+  .projects img {
+    max-width: 300px;
+  }
+
+  .about {
+    margin-top: 30px;
+  }
+
+  .about p {
+    padding: 0 1em;
+  }
+
+  .contact {
+    margin-top: 30px;
+  }
+
+  .contact a {
+    font-size: 15px;
+
+}
