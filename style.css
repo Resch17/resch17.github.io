@@ -91,6 +91,7 @@ a:focus {
   right: 0;
   width: 950px;
   margin: 0 auto;
+  z-index: 999999;
 }
 
 .nav a {
