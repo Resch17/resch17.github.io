@@ -305,7 +305,3 @@ a:focus {
 .contact a:hover {
   color: var(--accent-color);
 }
-
-.contact a:first-of-type:hover {
-  color: var(--dark-color);
-}
