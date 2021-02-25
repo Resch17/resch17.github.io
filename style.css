@@ -57,6 +57,10 @@ select {
   margin: 0 auto;
 }
 
+.isHidden {
+  display: none;
+}
+
 /* --------------------- */
 /* -------NAVBAR-------- */
 /* --------------------- */
@@ -181,7 +185,7 @@ select {
 
 .skills__item {
   font-size: 24px;
-  text-shadow: 0px 2px 4px rgba(218, 121, 213, 0.75);
+  text-shadow: 0px 2px 4px rgba(141, 141, 141, 0.75);
   margin: 0 17px;
 }
 
@@ -189,6 +193,10 @@ select {
 
 .projects {
   margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
 .projects h3 {
@@ -196,6 +204,61 @@ select {
   color: var(--dark-color);
   text-align: center;
   font-size: 41px;
+}
+
+.projects h4 {
+  font-family: var(--heading-font);
+  color: var(--dark-color);
+  text-align: center;
+  font-size: 24px;
+}
+
+.projects p {
+  font-family: var(--body-font);
+  color: var(--dark-color);
+  font-size: 17px;
+}
+
+.projects li {
+  font-family: var(--body-font);
+  color: var(--dark-color);
+  font-size: 15px;
+}
+
+.projects img {
+  border-radius: 7px;
+}
+
+#repImage:hover {
+  filter: blur(3px) grayscale();
+  cursor: pointer;
+}
+
+.projects__image-container {
+  position: relative;
+}
+
+.projects__image-container:hover > #repertoireLink {
+  display: block;
+}
+
+#repertoireLink:hover ~ #repImage {
+  filter: blur(3px) grayscale();
+}
+
+.projects__image-container a {
+  text-decoration: none;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  z-index: 5000;
+  display: none;
+}
+
+.projects__image-container h3 {
+  color: var(--background-color);
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 1);
 }
 
 /* Contact */
