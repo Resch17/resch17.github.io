@@ -1,181 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aaron Resch | Software Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
-  </head>
-  <body>
-    <a id="about"></a>
-    <div class="container">
-      <nav class="nav">
-        <div class="nav-content">
-          <div class="nav__title">Aaron Resch</div>
-          <div class="nav__link"><a href="#about">About</a></div>
-          <div class="nav__link"><a href="#skills">Skills</a></div>
-          <div class="nav__link"><a href="#projects">Projects</a></div>
-          <div class="nav__link"><a href="#contact">Contact</a></div>
-          <div class="nav__resume">
-            <a href="./Resume V2 - Resch.pdf" target="blank" rel="noreferrer"
-              ><i class="fas fa-download"></i> Resume</a
-            >
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aaron Resch | Software Developer</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="author" content="Aaron Resch" />
+        <meta name="description" content="Personal website for Nashville-based web/software developer Aaron Resch" />
+    </head>
+    <body>
+        <a id="about"></a>
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-content">
+                    <div class="nav__title">Aaron Resch</div>
+                    <div class="nav__link"><a href="#about">About</a></div>
+                    <div class="nav__link"><a href="#skills">Skills</a></div>
+                    <div class="nav__link">
+                        <a href="#projects">Projects</a>
+                    </div>
+                    <div class="nav__link"><a href="#contact">Contact</a></div>
+                    <div class="nav__resume">
+                        <a
+                            href="./Resume V2 - Resch.pdf"
+                            target="blank"
+                            rel="noreferrer"
+                            ><i class="fas fa-download"></i> Resume</a
+                        >
+                    </div>
+                </div>
+                <div class="divided-hamburger">
+                    <input
+                        type="checkbox"
+                        class="trigger"
+                        name="hamburger"
+                    /><label for="hamburger" id="removeThis">hamburger</label>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mobile-banner">
+                    <h3 class="mobile-title">Aaron Resch</h3>
+                </div>
+            </nav>
+            <nav class="mobile-nav">
+                <div class="nav__link" id="aboutLink">
+                    <a href="#about">About</a>
+                </div>
+                <div class="nav__link" id="skillsLink">
+                    <a href="#skills">Skills</a>
+                </div>
+                <div class="nav__link" id="projectsLink">
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="nav__link">
+                    <a href="#contact" id="contactLink">Contact</a>
+                </div>
+                <div class="nav__resume">
+                    <a
+                        href="./Resume V2 - Resch.pdf"
+                        target="blank"
+                        rel="noreferrer"
+                        ><i class="fas fa-download"></i> Resume</a
+                    >
+                </div>
+            </nav>
+            <main class="main">
+                <section class="about">
+                    <div class="aaron-img">
+                        <img src="./images/aaron-small.png" alt="Aaron Resch" />
+                    </div>
+                    <h2>
+                        Hello! I'm Aaron Resch and I am a software developer in
+                        Nashville, TN.
+                    </h2>
+                    <p>
+                        Having always been fascinated with computers and the
+                        internet, I made the move to enroll in Nashville
+                        Software School to learn the tools of the trade for
+                        software and web development, and to sharpen my
+                        collaboration and teamwork skills.
+                    </p>
+                    <a id="skills"></a>
+                </section>
+                <section class="skills">
+                    <h3>Skills/Tech</h3>
+                    <article class="skills__container">
+                        <div>
+                            <p class="skills__item">HTML 5</p>
+                            <p class="skills__item">CSS 3</p>
+                            <p class="skills__item">JavaScript</p>
+                            <p class="skills__item">React</p>
+                            <p class="skills__item">C#</p>
+                            <p class="skills__item">SQL</p>
+                            <p class="skills__item">Git/Github</p>
+                            <p class="skills__item">UI/UX</p>
+                        </div>
+                        <div>
+                            <p class="skills__item">ASP .NET</p>
+                            <p class="skills__item">Responsive Design</p>
+                            <p class="skills__item">Figma</p>
+                            <p class="skills__item">Remote Work</p>
+                        </div>
+                        <div>
+                            <p class="skills__item">Management</p>
+                            <p class="skills__item">Training</p>
+                            <p class="skills__item">ERDs/Wireframing</p>
+                        </div>
+                        <a id="projects"></a>
+                    </article>
+                </section>
+                <section class="projects">
+                    <h3>Projects</h3>
+                    <a
+                        href="https://github.com/Resch17/repertoire"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><h4>Repertoire - NSS Front-End Capstone</h4></a
+                    >
+                    <p>
+                        Repertoire is a web application built using React,
+                        targeted towards musicians who like to find sheet music
+                        online. The app allows them to organize their
+                        repertoire, keep personal notes on how they like to play
+                        songs, embed YouTube videos to play along to, create
+                        setlists, and tune their instruments. This project was
+                        created solo in a two-week sprint, and helped to
+                        reinforce the concepts of CRUD functionality, extensive
+                        planning, and the single-responsibility principle.
+                    </p>
+                    <ul>
+                        <li>
+                            Built in React with JSON-server as persistent data
+                            storage
+                        </li>
+                        <li>
+                            Styled primarily with custom CSS (Material-UI used
+                            for confirmation dialogs)
+                        </li>
+                        <li>
+                            Includes audio integration, printable drag-and-drop
+                            setlist rearranging, and six user-selectable themes
+                        </li>
+                    </ul>
+                    <div class="projects__image-container">
+                        <a
+                            href="https://github.com/Resch17/repertoire"
+                            id="repertoireLink"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <h3>View on Github</h3>
+                        </a>
+                        <img
+                            src="./images/repertoire3.png"
+                            alt="Repertoire Song Detail View"
+                            id="repImage"
+                        />
+                    </div>
+                    <a
+                        href="https://github.com/Resch17/repertoire"
+                        target="_blank"
+                        rel="noreferrer"
+                        class="mobile-label"
+                        ><p>Click to view on Github</p></a
+                    >
+                </section>
+                <section class="contact">
+                    <h3>Contact</h3>
+                    <a href="mailto:aaronmresch@gmail.com"
+                        ><i class="fas fa-envelope"></i> -
+                        aaronmresch@gmail.com</a
+                    >
+                    <a
+                        href="https://github.com/Resch17/"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-github"></i> -
+                        https://github.com/Resch17</a
+                    >
+                    <a
+                        href="https://www.linkedin.com/in/aaron-resch/"
+                        target="_blank"
+                        rel="noreferrer"
+                        ><i class="fab fa-linkedin-in"></i> -
+                        https://www.linkedin.com/in/aaron-resch</a
+                    >
+                </section>
+            </main>
+            <footer>&#169; 2021 - Aaron Resch</footer>
         </div>
-        <div class="divided-hamburger">
-          <input type="checkbox" class="trigger" name="hamburger" /><label
-            for="hamburger"
-            id="removeThis"
-            >hamburger</label
-          >
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="mobile-banner">
-          <h3 class="mobile-title">Aaron Resch</h3>
-        </div>
-      </nav>
-      <nav class="mobile-nav">
-        <div class="nav__link" id="aboutLink"><a href="#about">About</a></div>
-        <div class="nav__link" id="skillsLink">
-          <a href="#skills">Skills</a>
-        </div>
-        <div class="nav__link" id="projectsLink">
-          <a href="#projects">Projects</a>
-        </div>
-        <div class="nav__link">
-          <a href="#contact" id="contactLink">Contact</a>
-        </div>
-        <div class="nav__resume">
-          <a href="./Resume V2 - Resch.pdf" target="blank" rel="noreferrer"
-            ><i class="fas fa-download"></i> Resume</a
-          >
-        </div>
-      </nav>
-      <main class="main">
-        <section class="about">
-          <div class="aaron-img">
-            <img src="./images/aaron-small.png" alt="Aaron Resch" />
-          </div>
-          <h2>
-            Hello! I'm Aaron Resch and I am a software developer in Nashville,
-            TN.
-          </h2>
-          <p>
-            Having always been fascinated with computers and the internet, I
-            made the move to enroll in Nashville Software School to learn the
-            tools of the trade for software and web development, and to sharpen
-            my collaboration and teamwork skills.
-          </p>
-          <a id="skills"></a>
-        </section>
-        <section class="skills">
-          <h3>Skills/Tech</h3>
-          <article class="skills__container">
-            <div>
-              <p class="skills__item">HTML 5</p>
-              <p class="skills__item">CSS 3</p>
-              <p class="skills__item">JavaScript</p>
-              <p class="skills__item">React</p>
-              <p class="skills__item">C#</p>
-              <p class="skills__item">SQL</p>
-              <p class="skills__item">Git/Github</p>
-              <p class="skills__item">UI/UX</p>
-            </div>
-            <div>
-              <p class="skills__item">ASP .NET</p>
-              <p class="skills__item">Responsive Design</p>
-              <p class="skills__item">Figma</p>
-              <p class="skills__item">Remote Work</p>
-            </div>
-            <div>
-              <p class="skills__item">Management</p>
-              <p class="skills__item">Training</p>
-              <p class="skills__item">ERDs/Wireframing</p>
-            </div>
-            <a id="projects"></a>
-          </article>
-        </section>
-        <section class="projects">
-          <h3>Projects</h3>
-          <a
-            href="https://github.com/Resch17/repertoire"
-            target="_blank"
-            rel="noreferrer"
-            ><h4>Repertoire - NSS Front-End Capstone</h4></a
-          >
-          <p>
-            Repertoire is a web application built using React, targeted towards
-            musicians who like to find sheet music online. The app allows them
-            to organize their repertoire, keep personal notes on how they like
-            to play songs, embed YouTube videos to play along to, create
-            setlists, and tune their instruments. This project was created solo
-            in a two-week sprint, and helped to reinforce the concepts of CRUD
-            functionality, extensive planning, and the single-responsibility
-            principle.
-          </p>
-          <ul>
-            <li>Built in React with JSON-server as persistent data storage</li>
-            <li>
-              Styled primarily with custom CSS (Material-UI used for
-              confirmation dialogs)
-            </li>
-            <li>
-              Includes audio integration, printable drag-and-drop setlist
-              rearranging, and six user-selectable themes
-            </li>
-          </ul>
-          <div class="projects__image-container">
-            <a
-              href="https://github.com/Resch17/repertoire"
-              id="repertoireLink"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <h3>View on Github</h3>
-            </a>
-            <img
-              src="./images/repertoire3.png"
-              alt="Repertoire Song Detail View"
-              id="repImage"
-            />
-          </div>
-          <a
-            href="https://github.com/Resch17/repertoire"
-            target="_blank"
-            rel="noreferrer"
-            class="mobile-label"
-            ><p>Click to view on Github</p></a
-          >
-        </section>
-        <section class="contact">
-          <h3>Contact</h3>
-          <a href="mailto:aaronmresch@gmail.com"
-            ><i class="fas fa-envelope"></i> - aaronmresch@gmail.com</a
-          >
-          <a href="https://github.com/Resch17/" target="_blank" rel="noreferrer"
-            ><i class="fab fa-github"></i> - https://github.com/Resch17</a
-          >
-          <a
-            href="https://www.linkedin.com/in/aaron-resch/"
-            target="_blank"
-            rel="noreferrer"
-            ><i class="fab fa-linkedin-in"></i> -
-            https://www.linkedin.com/in/aaron-resch</a
-          >
-        </section>
-      </main>
-    </div>
-    <script src="script.js"></script>
-    <a id="contact"></a>
-  </body>
+        <script src="script.js"></script>
+        <a id="contact"></a>
+    </body>
 </html>
