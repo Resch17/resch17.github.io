@@ -52,10 +52,12 @@
             return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
         }
 
-        button.addEventListener('click', () => {
+        button.addEventListener('click', randomBond);
+
+        const randomBond = () => {
             let randomNumber = getRandomInt(0, movies.length);
             outputElement.innerHTML = movies[randomNumber];
-        })
+        }
 
         var myShakeEvent = new Shake({
             threshold: 15,
@@ -65,8 +67,7 @@
         myShakeEvent.start();
 
         const shakeEventDidOccur = () => {
-            alert('shake!');
-            button.style.backgroundColor = '#00ff00';
+            randomBond();
         }
 
         window.addEventListener('shake', shakeEventDidOccur, false);
