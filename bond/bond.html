@@ -5,12 +5,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bond Chooser</title>
+    <title>Shaken, Not Stirred | Random Bond Movie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Lobster&display=swap" rel="stylesheet">
+
     <script type="text/javascript" src="shake.js"></script>
 </head>
 
 <body>
+    <h1 id="title">Shaken, Not Stirred...</h1>
+    <h2 id="desc">Shake your phone or hit the button for a random <i>007</i> movie!</h2>
     <button id="button">Random Bond Movie!</button>
 
     <h2 id="output">Press the button!</h2>
@@ -51,7 +56,6 @@
             max = Math.floor(max);
             return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
         }
-
 
         const randomBond = () => {
             let randomNumber = getRandomInt(0, movies.length);
