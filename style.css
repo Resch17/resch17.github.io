@@ -498,6 +498,11 @@ footer {
         width: 100vw;
     }
 
+    .mobile-nav a {
+        background-color: inherit;
+        color: var(--shading-color);
+    }
+
     .nav-content {
         display: none;
     }
@@ -518,6 +523,7 @@ footer {
     .nav__resume {
         width: 130px;
         text-align: center;
+        border: 2px solid var(--shading-color);
     }
 
     .skills__container div {
