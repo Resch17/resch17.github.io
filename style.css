@@ -264,29 +264,32 @@ a:focus {
     border-radius: 7px;
 }
 
-#repImage:hover {
+#repImage:hover, #btsImage:hover {
     filter: blur(3px) grayscale();
     cursor: pointer;
 }
 
 .projects__image-container {
     margin-top: 25px;
+    margin-bottom: 50px;
     position: relative;
 }
 
-.projects__image-container:hover > #repertoireLink {
+.projects__image-container:hover > #repertoireLink,
+.projects__image-container:hover > #btsLink {
     display: block;
 }
 
-#repertoireLink {
+#repertoireLink, #btsLink {
   background-color: transparent;
 }
 
-#repertoireLink:hover {
+#repertoireLink:hover, #btsLink:hover {
   background-color: transparent;
 }
 
-#repertoireLink:hover ~ #repImage {
+#repertoireLink:hover ~ #repImage,
+#btsLink:hover ~ #btsImage {
     filter: blur(3px) grayscale();
 }
 
