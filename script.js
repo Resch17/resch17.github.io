@@ -23,3 +23,8 @@ linksArray.forEach((link) => {
     mobileNav.style.display = 'none';
   });
 });
+
+//copyright date
+const footer = document.getElementById('footer');
+const dateText = `&#169; ${new Date().getFullYear()} - Aaron Resch`;
+footer.innerHTML = dateText;
