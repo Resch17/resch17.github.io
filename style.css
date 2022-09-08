@@ -81,6 +81,10 @@ a:focus {
     display: none;
 }
 
+.nav {
+	z-index: 999999;
+}
+
 .nav-content {
     display: flex;
     background-color: var(--background-color);
